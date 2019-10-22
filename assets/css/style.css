@@ -1,0 +1,45 @@
+button, div, form, input {
+      margin: 10px;
+    }
+
+button {
+    border-radius: 15%;
+    background-color: palevioletred;
+    border-color: rgb(210, 224, 224);
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+button:hover {
+    background-color:lightpink;
+    color: black;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+ .add-celeb {
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-left: 3px;
+   box-shadow: 0 0 10px 1px;
+} 
+
+
+.add-celeb:hover {
+    background-color: rgb(221, 197, 197);
+}
+
+/*  p {
+    float: left;
+    padding-left: 0;
+  
+} */
+
+
+/* img {
+    float: left;
+    padding-left: 40px;
+} */

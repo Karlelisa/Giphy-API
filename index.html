@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -21,10 +21,35 @@
 
 
     <script src="assets/javascript/giphy.js"></script>
-    <title>Document</title>
+    <title>Giphy-API</title>
 </head>
 
 <body>
+
+    <div class="container">
+        <h1>Celeberty Search</h1>
+
+        <!-- Buttons will Get Dumped Here -->
+        <div id="buttons-view"></div>
+
+        <br>
+        <form id="celeb-form">
+            <label for="celeb-input">Add A Celeberty Name!</label>
+            <input type="text" id="celeb-input">
+
+            <!-- Button triggers new movie to be added -->
+            <input id="add-celeb" type="submit" value="Submit" class="add-celeb">
+        </form>
+
+        <div>
+            <p id="display"></p>
+        </div>
+    </div>
+
+    <div id="gifs-appear-here">
+    </div>
+
+
 
 </body>
 
