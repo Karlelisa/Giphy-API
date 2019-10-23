@@ -35,32 +35,40 @@ $(document).ready(function () {
 
                     let celebImage = $("<img>");
 
+                    celebImage.addClass("gif")
+
                     //Cited: https://stackoverflow.com/questions/44298501/how-to-pause-and-start-gif-using-jquery-ajax
-                    //celebImage.attr("src", results[i].images.fixed_height_still.url);
-                    celebImage.attr("src", results[i].images.fixed_height.url);
+                    //From the above site, I learned to add the word still in the below code to make the gift non-animated
+                    celebImage.attr("src", results[i].images.fixed_height_still.url);
+                    //celebImage.attr("src", results[i].images.fixed_height.url);
 
 
                     gifDiv.prepend(celebImage);
                     gifDiv.prepend(p);
 
                     $("#gifs-appear-here").prepend(gifDiv);
+
+                    // gifDiv.clear();
                 }
             });
     }
 
     //Cited: https://stackoverflow.com/questions/44298501/how-to-pause-and-start-gif-using-jquery-ajax
-    /* $('body').on('click', '.gif', function () {
-        var src = $(this).attr("src");
+    //This function plays and stops the gif with every click. When the user clicks on the non-animated gif, the gif will start to animate. When the user clicks on it again, the gif will stop animating.
+
+    $('div').on('click', '.gif', function () {
+        let src = $(this).attr("src");
+
         if ($(this).hasClass('playing')) {
-            //stop
+            //stop - This stops the gif from animating by removing the playing class
             $(this).attr('src', src.replace(/\.gif/i, "_s.gif"))
             $(this).removeClass('playing');
         } else {
-            //play
+            //play - With another click, this code will animate the gif by adding the play class.
             $(this).addClass('playing');
             $(this).attr('src', src.replace(/\_s.gif/i, ".gif"))
         }
-    }); */
+    });
 
 
     // Function for displaying movie data
