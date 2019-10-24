@@ -1,13 +1,42 @@
-button, div, form, input {
+
+body { 
+    background-image: url("../images/crowd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* height: 100%;  */
+  }
+
+
+/* I obtained the glow font code for my title from this website: https://cssreset.com/create-glowing-neon-text-using-css3/ */
+h1 { 
+    text-align: center;
+    margin-left: 260px;
+    font-size: 60px;
+    font-family: 'Futura';
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 
+    0 0 55px #ff0080, 0 0 75px #ff0080;
+}
+
+div, form, input {
       margin: 10px;
-    }
+}
+
+
+/* .container {
+    position: fixed;
+} */ 
 
 button {
     border-radius: 15%;
-    background-color: palevioletred;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(230, 0, 122);
     border-color: rgb(210, 224, 224);
     font-weight: bold;
     color: whitesmoke;
+    box-shadow: 0 0 10px 3px;
 }
 
 button:hover {
@@ -15,31 +44,81 @@ button:hover {
     color: black;
 }
 
-label {
-    font-weight: bold;
+#buttons-view{
+max-width: 100%;
 }
 
 
- .add-celeb {
+label {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    margin-left: -10px;
+}
+
+
+/*  .add-celeb {
    padding-left: 10px;
    padding-right: 10px;
    margin-left: 3px;
-   box-shadow: 0 0 10px 1px;
+   box-shadow: 0 0 10px 3px;
 } 
 
 
 .add-celeb:hover {
     background-color: rgb(221, 197, 197);
-}
-
-/*  p {
-    float: left;
-    padding-left: 0;
-  
 } */
+
+/*Cited: https://www.w3schools.com/css/css3_buttons.asp. Adding a "pressed" effect on click of my submit button.*/
+.add-celeb {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px #999;
+  }
+  
+  .add-celeb:hover {background-color: rgb(248, 194, 194)}
+  
+  .add-celeb:active {
+    background-color: whitesmoke;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+ p {/* 
+     color:  rgb(255, 0, 106);
+    font-weight: bolder; */
+    font-size: 20px;
+    font-family: 'Futura';
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 
+    0 0 55px #ff0080, 0 0 75px #ff0080;
+} 
+
 
 
 /* img {
-    float: left;
-    padding-left: 40px;
-} */
+    max-width: 100%;
+    height: auto;
+  } */
+  
+form {
+    max-width: 100%;
+    margin-left: 430px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}

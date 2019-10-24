@@ -3,15 +3,14 @@
 $(document).ready(function () {
 
     // Initial array of topics
-    let topics = ["Beyonce", "Jay-Z", "Tupac", "Justin Timberlake", "Jennifer Lopez", "Rihanna", "Whitney Houston", "Micheal Jackson", "DJ Snake"];
+    let topics = ["Beyonce", "Jay-Z", "Tupac", "Justin Timberlake", "Jennifer Lopez", "Rihanna", "Whitney Houston", "Micheal Jackson",
+        "DJ Snake", "Ariana Grande", "Katy Perry", "Bruno Mars", "Kanye West", "Khalid", "Halsey", "Imagin Dragons", "Cardi B", "Mariah Carey"];
 
 
     // Function for dumping the JSON content for each button into the div
     function displayCelebGif(evt) {
 
-        // YOUR CODE GOES HERE!!! HINT: You will need to create a new div to hold the JSON.
-        // console.log(evt.target.dataset.name)
-        // console.log(evt)
+
         let person = $(this).attr("data-person")
         let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=zU2CODu6jPmisRlsMJnncF52J89fLzoK&limit=10";
 
@@ -26,7 +25,11 @@ $(document).ready(function () {
             .then(function (response) {
                 let results = response.data;
 
+                //deleting the 10 set of gifs so that only the new music artists' gifs appear per click
+                $("#gifs-appear-here").empty();
+
                 for (let i = 0; i < results.length; i++) {
+
                     let gifDiv = $("<div>");
 
                     let rating = results[i].rating;
@@ -48,14 +51,16 @@ $(document).ready(function () {
 
                     $("#gifs-appear-here").prepend(gifDiv);
 
-                    // gifDiv.clear();
+                    //gifDiv.clear();
                 }
             });
     }
 
     //Cited: https://stackoverflow.com/questions/44298501/how-to-pause-and-start-gif-using-jquery-ajax
     //This function plays and stops the gif with every click. When the user clicks on the non-animated gif, the gif will start to animate. When the user clicks on it again, the gif will stop animating.
-
+    /* This function plays and stops the gif with every click. The hasClass() checks if the div element has the class of playing or not and 
+    will return true or false. If it does have the class, it will return true and will play (animate) the gif. If the element does not have 
+    the class then it will return false and not play (animate) the gif. */
     $('div').on('click', '.gif', function () {
         let src = $(this).attr("src");
 
@@ -71,7 +76,7 @@ $(document).ready(function () {
     });
 
 
-    // Function for displaying movie data
+    // Function for displaying the celeb data
     function renderButtons() {
 
         // Deleting the buttons prior to adding new topics
@@ -82,7 +87,7 @@ $(document).ready(function () {
         for (let i = 0; i < topics.length; i++) {
 
 
-            // Then dynamicaly generating buttons for each movie in the array
+            // Then dynamicaly generating buttons for each celeb in the array
             // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
             let a = $("<button>");
             // Adding a class of movie to our button
