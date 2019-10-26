@@ -7,8 +7,9 @@ $(document).ready(function () {
         "DJ Snake", "Ariana Grande", "Katy Perry", "Bruno Mars", "Kanye West", "Khalid", "Mariah Carey"];
 
 
-    // Function for dumping the JSON content for each button into the div
+    // Function for putting the JSON content for each button into the div
     function displayCelebGif(evt) {
+
 
 
         let person = $(this).attr("data-person")
@@ -20,6 +21,7 @@ $(document).ready(function () {
             method: "GET"
         })
 
+            //This function obtains the response of the AJAX code and turns it into data
             .then(function (response) {
                 let results = response.data;
 
@@ -42,7 +44,6 @@ $(document).ready(function () {
                     //Cited: https://stackoverflow.com/questions/44298501/how-to-pause-and-start-gif-using-jquery-ajax
                     //From the above site, I learned to add the word still before the .url to make the gift non-animated
                     celebImage.attr("src", results[i].images.fixed_height_still.url);
-                    //celebImage.attr("src", results[i].images.fixed_height.url);
 
 
                     gifDiv.prepend(celebImage);
@@ -112,8 +113,5 @@ $(document).ready(function () {
 
     // Calling the renderButtons function to display the intial buttons
     renderButtons();
-
-
-
 
 });

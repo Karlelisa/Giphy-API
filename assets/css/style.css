@@ -22,10 +22,6 @@ div, form, input {
 }
 
 
-/* .container {
-    position: fixed;
-} */ 
-
 button {
     letter-spacing: 2px;
     border-radius: 15%;
@@ -124,6 +120,23 @@ form {
 }
 
 
+/*Live Stream TuneIn Radio Station*/
+#myAudio {
+margin-left: 620px;
+margin-top: 320px; 
+}
+
+#audioTitle {
+  margin-right: 80px;
+  font-weight: bolder;
+}
+
+audio {
+  margin-left: 30px;
+}
+
+
+
  /*Media Queries*/
 
  @media screen and (max-width: 980px) {
@@ -148,6 +161,11 @@ form {
     #gifs-appear-here {
         margin-left: 150px
     }
+
+    #myAudio {
+      margin-left: 305px;
+      margin-top: 320px; 
+      }
   } 
   
   
@@ -172,8 +190,13 @@ form {
   }
 
   #gifs-appear-here {
-    margin-left: 170px
+    margin-left: 180px
   }
+
+  #myAudio {
+    margin-left: 180px;
+    margin-top: 205px; 
+    }
 }
 
 
@@ -193,8 +216,13 @@ form {
 
 
     #gifs-appear-here {
-        margin-left: 120px
-      }
+        margin-left: 140px
+    }
   
+    #myAudio {
+       margin-left: 120px;
+       margin-top: 200px; 
+    }
+
   } 
   
