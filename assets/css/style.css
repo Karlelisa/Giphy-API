@@ -3,16 +3,14 @@ body {
     background-image: url("../images/crowd.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    /* height: 100%;  */
   }
 
 
 /* I obtained the glow font code for my title from this website: https://cssreset.com/create-glowing-neon-text-using-css3/ */
 h1 { 
     text-align: center;
-    margin-left: 260px;
-    font-size: 60px;
+    margin-left: 10px;
+    font-size: 65px;
     font-family: 'Futura';
     color: #fff;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 
@@ -29,6 +27,7 @@ div, form, input {
 } */ 
 
 button {
+    letter-spacing: 2px;
     border-radius: 15%;
     margin-left: 15px;
     margin-bottom: 10px;
@@ -49,6 +48,7 @@ max-width: 100%;
 }
 
 
+/* The label of Add A Music Artist's Name! */
 label {
     font-weight: bold;
     color: white;
@@ -95,11 +95,13 @@ label {
   }
 
 
+  /*the ratings text*/
  p {/* 
      color:  rgb(255, 0, 106);
     font-weight: bolder; */
     font-size: 20px;
     font-family: 'Futura';
+    font-weight: bolder;
     color: black;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 
     0 0 55px #ff0080, 0 0 75px #ff0080;
@@ -112,9 +114,10 @@ label {
     height: auto;
   } */
   
+/* The submit form div */
 form {
     max-width: 100%;
-    margin-left: 430px;
+    margin-left: 300px;
 }
 
 
@@ -122,3 +125,78 @@ form {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* The gif images */
+.gif{
+    height: 200px;
+    width: 300px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 5px;
+}
+
+#gifs-appear-here {
+    margin-left: 120px;
+}
+
+
+ /*Media Queries*/
+
+ @media screen and (max-width: 980px) {
+
+    label {
+        color: black;
+        font-size: 20px;
+        font-weight: bolder;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 
+        0 0 55px #ff0080, 0 0 75px #ff0080;
+      }
+
+    #celeb-form {
+      padding-right: 0;
+        top: 20px;
+        left: 10px;
+        width: 100%;
+        margin-right: 800px;
+        margin-left: 95px;
+    }
+
+    #gifs-appear-here {
+        margin-left: 150px
+    }
+  } 
+  
+  
+  @media screen and (max-width: 768px) {
+  label {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 
+    0 0 55px #ff0080, 0 0 75px #ff0080;
+  }
+  
+  
+  form {
+      margin-left: -60px;
+      left: 100px;
+  }
+  
+  .add-celeb {
+    margin-left: 450px;
+    margin-top: -45px;
+  }
+}
+
+
+  @media screen and (max-width: 640px) {
+  
+    label {
+        color: black;
+        font-weight: bold;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 
+        0 0 55px #ff0080, 0 0 75px #ff0080;
+      }
+    
+  
+  } 
+  
