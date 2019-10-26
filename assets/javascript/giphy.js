@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     // Initial array of topics
     let topics = ["Beyonce", "Jay-Z", "Tupac", "Justin Timberlake", "Jennifer Lopez", "Rihanna", "Whitney Houston", "Micheal Jackson",
-        "DJ Snake", "Ariana Grande", "Katy Perry", "Bruno Mars", "Kanye West", "Khalid", "Mariah Carey"];
+        "DJ Snake", "Ariana Grande", "Katy Perry", "Bruno Mars", "Kanye West", "Mariah Carey"];
 
 
     // Function for putting the JSON content for each button into the div
