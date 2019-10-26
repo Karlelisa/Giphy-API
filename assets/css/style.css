@@ -50,24 +50,16 @@ max-width: 100%;
 
 /* The label of Add A Music Artist's Name! */
 label {
-    font-weight: bold;
-    color: white;
-    font-size: 18px;
+    font-weight: bolder;
+    /* color: white;  */
+    font-size: 20px;
     margin-left: -10px;
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 
+    0 0 55px #ff0080, 0 0 75px #ff0080 
 }
 
 
-/*  .add-celeb {
-   padding-left: 10px;
-   padding-right: 10px;
-   margin-left: 3px;
-   box-shadow: 0 0 10px 3px;
-} 
-
-
-.add-celeb:hover {
-    background-color: rgb(221, 197, 197);
-} */
 
 /*Cited: https://www.w3schools.com/css/css3_buttons.asp. Adding a "pressed" effect on click of my submit button.*/
 .add-celeb {
@@ -96,9 +88,7 @@ label {
 
 
   /*the ratings text*/
- p {/* 
-     color:  rgb(255, 0, 106);
-    font-weight: bolder; */
+ p {
     font-size: 20px;
     font-family: 'Futura';
     font-weight: bolder;
@@ -108,11 +98,6 @@ label {
 } 
 
 
-
-/* img {
-    max-width: 100%;
-    height: auto;
-  } */
   
 /* The submit form div */
 form {
@@ -176,14 +161,18 @@ form {
   }
   
   
-  form {
-      margin-left: -60px;
+  #celeb-form {
+      margin-left: -40px;
       left: 100px;
   }
   
   .add-celeb {
     margin-left: 450px;
     margin-top: -45px;
+  }
+
+  #gifs-appear-here {
+    margin-left: 170px
   }
 }
 
@@ -197,6 +186,15 @@ form {
         0 0 55px #ff0080, 0 0 75px #ff0080;
       }
     
+
+    #celeb-form {
+      margin-left: -20px;
+    }
+
+
+    #gifs-appear-here {
+        margin-left: 120px
+      }
   
   } 
   
