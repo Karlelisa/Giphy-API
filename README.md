@@ -31,6 +31,6 @@ Click on the below link to view the Giphy Music Artist Search.
 https://karlelisa.github.io/Giphy-API/
 
 
-## Giphy Music Artist Screenshot
+## Giphy Music Artist Search Screenshot
 ![My Giphy Music Artist Search Cover Page](/assets/images/my-giphy-music-artist-search-cover-page.png) 
 
